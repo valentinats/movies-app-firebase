@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список фильмов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="icon" type="image/svg+xml" href="./film-icon.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="labels">
+        <p class="list__label">Список фильмов</p>
+        <p class="year__label">2023</p>
+      </div>
+      <h1>Посмотреть</h1>
+      <div class="form__wrapper">
+        <form class="form__content" onsubmit="return false">
+          <textarea
+            id="title"
+            class="js-film-title-input form__title"
+            type="text"
+            cols="1"
+            placeholder="Добавить фильм"
+            spellcheck="true"
+          ></textarea>
+          <button class="js-add-film form__button">
+            <img src="./arrow.svg" />
+          </button>
+        </form>
+        <div id="movies__wrapper" class="movies__wrapper">
+          <ol class="js-cards cards__list">
+            <div class="cards">
+              <p>Тут пока пусто...</p>
+            </div>
+          </ol>
+        </div>       
+      </div>
+    </div>
+    <!-- <script type="module" src="firebase.js"></script> -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
